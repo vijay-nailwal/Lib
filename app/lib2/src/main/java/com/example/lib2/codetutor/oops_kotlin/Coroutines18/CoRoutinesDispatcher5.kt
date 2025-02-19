@@ -1,0 +1,24 @@
+package com.example.lib2.codetutor.oops_kotlin.Coroutines18
+
+import kotlinx.coroutines.*
+
+suspend fun longRunningWork2(coroutineName: String, delay: Long) {
+    println("Worker Thread Started")
+    println("Thread name: " + Thread.currentThread().name + ", Thread id: ${Thread.currentThread().id} in ${coroutineName}")
+    for (i in 0..9) {
+        delay(delay)
+        //shift thread to another thread
+        withContext(Dispatchers.Default) {
+            println("Remaining time left for ${Thread.currentThread().name}: " + (10 - i) + " in " + coroutineName)
+        }
+    }
+    println("${coroutineName} Thread ended")
+}
+
+fun main() = runBlocking {
+    println("Main Started")
+    println("Thread name: " + Thread.currentThread().name + ", Thread id: " + Thread.currentThread().id)
+    async { longRunningWork2("CoRoutine1", 500) }
+    async { longRunningWork2("CoRoutine2", 400) }
+    println("Main ended")
+}
