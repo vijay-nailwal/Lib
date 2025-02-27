@@ -26,18 +26,18 @@ fun main(array: Array<String>) {
     val listOfNames2 = listOf<String>("D", "E", "F")
     val listOfNames3 = listOf<String>("G", "H", "I")
 
-
-//    val listOfCities = listOf<String>("Bangalore","Hyderabad","Mumbai","New Delhi","Chennai","Thiruvananthapuram","Panji")
+    val listOfCities = listOf<String>("Bangalore","Hyderabad","Mumbai","New Delhi","Chennai","Thiruvananthapuram","Panji")
+//    println(listOfCities)
 //Filtering
-//    people.filter { it.nationality.equals("Indian") }.forEach { println(it) }
-//    people.filter { it.age < 18  }.forEach { println(it) }
-//    nameBuildMap.filter { entry -> entry.key.equals("Bangaluru")}.forEach{t,u -> println("${t} ,${u}") }
-//    nameBuildMap.filter { entry -> entry.key.equals("Bangal>18uru")}.forEach{t,u -> println("${t} ,${u}") }
-//    people.filterIndexed{index, person -> index%2 == 0 && person.age > 18}.forEach{println(it)}
+    people.filter { it.nationality.equals("Indian") }.forEach { println(it) }
+    people.filter { it.age < 18  }.forEach { println(it) }
+    nameBuildMap.filter { entry -> entry.key.equals("Bangaluru")}.forEach{t,u -> println("${t} ,${u}") }
+    nameBuildMap.filter { entry -> entry.key.equals("Bangaluru")}.forEach{t,u -> println("${t} ,${u}") }
+    people.filterIndexed{index, person -> index%2 == 0 && person.age > 18}.forEach{println(it)}
 // partition
 //    people.partition { it.age > 18 }.first.forEach { println(it) }
-    people.partition { it.age > 18 }.second.forEach { println(it) }
-    println(people.partition { it.age > 18 })
+//    people.partition { it.age > 18 }.second.forEach { println(it) }
+//    println(people.partition { it.age > 18 })
 
 
 //Filter
