@@ -1,6 +1,6 @@
 package com.example.binarySearch;
 // https://leetcode.com/problems/split-array-largest-sum/
-public class SplitArray {
+public class SplitArray11 {
     public static void main(String[] args) {
 
     }
