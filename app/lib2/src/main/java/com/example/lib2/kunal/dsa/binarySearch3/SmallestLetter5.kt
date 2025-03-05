@@ -1,9 +1,15 @@
 package com.example.lib2.kunal.dsa.binarySearch3
 
 // https://leetcode.com/problems/find-smallest-letter-greater-than-target/
+//Find Smallest Letter Greater Than Target
 fun main(args: Array<String>) {
     var letters = arrayOf('c', 'f', 'j')
-    var target = 'c'
+//    var target = 'a'//output-c
+    var target = 'c'//output-f
+
+
+//    var letters = arrayOf('x', 'x', 'y', 'y')
+//    var target = 'z'//output-x
     println(nextGreatestLetter(letters, target))
 }
 

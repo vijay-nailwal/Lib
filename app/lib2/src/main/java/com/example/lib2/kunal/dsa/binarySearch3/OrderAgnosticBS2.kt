@@ -1,8 +1,8 @@
 package com.example.lib2.kunal.dsa.binarySearch3
 
 fun main() {
-//        int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};
-    val arr = intArrayOf(99, 80, 75, 22, 11, 10, 5, 2, -3)
+//        int[] arr = {-18, -12, -4, 0, 2, 3, 4, 15, 16, 18, 22, 45, 89};//asc
+    val arr = intArrayOf(99, 80, 75, 22, 11, 10, 5, 2, -3)//desc
     val target = 11
     println(orderAgnosticBS(arr, target))
 }
