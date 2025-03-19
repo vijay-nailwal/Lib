@@ -2,8 +2,9 @@ package com.example.lib2.codetutor.oops_kotlin.scopeFunction17
 
 import com.example.lib2.codetutor.oops_kotlin.collection16.Person
 
+//let, run and with-> result or object/result
 //apply and also-> always return an object
-//let, run and with-> result or object
+
 fun main(args: Array<String>) {
     var people: List<Person>? = listOf<Person>(
         Person("Anil", "Deshpande", "Indian", 40),
@@ -15,7 +16,7 @@ fun main(args: Array<String>) {
     )
     var letVaraible = Person("James", "Blend", "UK", 15).let {
 //        it.firstName + it.age//return result
-        return@let it.firstName + it.age//return result
+        return@let it.firstName + it.age//more readable form return result
 //        it//return object
     }
     println("Let: $letVaraible")

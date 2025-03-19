@@ -1,24 +1,26 @@
 package com.example.lib2.codetutor.oops_kotlin.extention8
 
+import javax.swing.text.html.ImageView
 
-class Radio (val frequency: String){
-    fun play(){
+
+class Radio(val frequency: String) {
+    fun play() {
         println("Playing audio from fm: ${frequency}")
     }
 }
 
-class Car(val radio: Radio, val carName: String){
-    fun printName(){
+class Car(val radio: Radio, val carName: String) {
+    fun printName() {
         print(carName)
     }
 
-    fun Radio.audioDetails(){
+    fun Radio.audioDetails() {
         printName()
         print(" : ")
         radio.play()
     }
 
-    fun showCarAudioDetails(){
+    fun showCarAudioDetails() {
         radio.audioDetails()
     }
 }

@@ -1,7 +1,6 @@
 package com.example.lib2.codetutor.oops_kotlin.sealedClass9
 //1.sealed class must be in same file you are not able to inherit in different file
-//2.Constructor of sealed class can be either protected(by default)
-//or private
+//2.Constructor of sealed class can be either protected(by default) or private
 sealed class Student {
 }
 
